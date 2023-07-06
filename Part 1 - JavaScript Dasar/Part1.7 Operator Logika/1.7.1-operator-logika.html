@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>Operator Logika</title>
+
+</head>
+
+<body>
+    <script>
+        const nilaiUjian=70;
+        const nilaiAbsensi=70;
+
+        const lulusUjian = (nilaiUjian>75);
+        document.writeln(lulusUjian);
+
+        const lulusAbsensi = (nilaiAbsensi>75);
+        document.writeln(lulusAbsensi);
+
+        const lulus = (lulusUjian && lulusAbsensi);
+
+        const unaryLulus = !lulus;
+
+        document.writeln("<p>" + lulus +"</p>")
+        
+        document.writeln("<p>" + unaryLulus +"</p>")
+
+
+    </script>
+</body>
+
+
+</html>
