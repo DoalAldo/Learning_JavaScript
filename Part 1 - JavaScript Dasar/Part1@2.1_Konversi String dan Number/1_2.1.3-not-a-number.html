@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>Konversi String dan Number (Not a Number)</title>
+
+</head>
+
+<body>
+    <script>
+        //contoh NAN
+    document.writeln(`<p> ${parseInt("salah")}</p>`);
+    document.writeln(`<p> ${parseFloat("salah")}</p>`);
+        //contoh dia baca angka awal dan mentolerir kesalahan
+    document.writeln(`<p> ${parseInt("1salah")}</p>`);
+    document.writeln(`<p> ${parseFloat("1.1salah")}</p>`);
+        //contoh number dan tidak ada tolerir kesalahan sama sekali kalau menggunakan Number
+    document.writeln(`<p> ${Number("1salah")}</p>`);
+    document.writeln(`<p> ${Number("1.1salah")}</p>`);
+
+        // contoh operasi pada NAN
+            //NAN di operasikan dengan NAN akan menghasilkan value NAN juga
+
+    const first =Number("salah"); // NAN
+    const totalNumber =first+150; // akan menghasilkan NAN krn dari awal sudah NAN
+    document.writeln(`<p> ${totalNumber}</p>`);
+    document.writeln(`<p> ${isNaN(first)}</p>`);
+
+
+    </script>
+</body>
+
+
+</html>
