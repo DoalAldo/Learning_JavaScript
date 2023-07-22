@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>Tipe data array</title>
+
+</head>
+
+<body>
+    <script>
+        //contoh array kosong
+        let arrayKosong=[];
+        // contoh array tidak kosong
+        let arrayNama=[
+            "Darmatius",
+            "Aldo",
+            "Gunawan"];
+        //adding data into array using PUSH
+
+        arrayNama.push("Andy");
+        arrayNama.push("Wijaya");
+        arrayNama.push("Leonardo");
+        console.table(arrayNama);
+
+        // length array
+        console.info(arrayNama.length);
+        console.info(arrayNama[3]);
+        arrayNama[3]="Bambang Andy";
+        console.info(arrayNama[3]);
+        console.info(arrayNama[4]);
+        // meng delete index array ke 4 dan value array ke 4
+        delete arrayNama[4];
+        console.info(arrayNama[4]);
+        console.table(arrayNama);
+
+        //keluarin data terakhir dari arrayNnama
+        // arrayNama.pop();
+        // arrayNama.pop();
+        // console.table(arrayNama);
+
+
+
+
+
+
+    </script>
+</body>
+
+
+</html>

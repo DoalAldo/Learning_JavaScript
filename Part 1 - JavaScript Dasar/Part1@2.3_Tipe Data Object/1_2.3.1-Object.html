@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>Tipe Data Object</title>
+
+</head>
+
+<body>
+    <script>
+        let namaLengkapIndonesia="Darmatius Aldo Gunawan";
+        // contoh object kosong
+        const person ={};
+
+        // contoh menambah atau menggubah data didalam object
+        person["name"]="Aldo Gunwan";
+        person["addres"] = "jln. toko tiga seberang no 3";
+        person["age"] = 30;
+
+        console.info(person["name"]);
+        console.info(person["addres"]);
+        console.info(person["age"]);
+        console.table(person);
+
+        // contoh menghapus object
+
+        delete person ["age"];
+
+        console.table(person);
+
+        // contoh membuat object dengan inisialisasi langsung
+
+        const orangIndonesia ={
+            namaLengkap:namaLengkapIndonesia,
+            alamat:"jln. toko tiga seberang no.3", 
+            umur:30
+        };
+
+        console.table(orangIndonesia);
+
+        console.info(`Nama : ${orangIndonesia.namaLengkap}`);
+        console.info(`Nama : ${orangIndonesia.alamat}`);
+        console.info(`Nama : ${orangIndonesia.umur}`);
+
+
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+
+
+</html>
