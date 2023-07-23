@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>Optional Chaining Operator</title>
+
+</head>
+
+<body>
+    <script>
+    // contoh optional Chaining yang akan error
+
+     const person={
+        addres :{
+            country:"Indonesia"
+        }
+     };
+
+    let country;
+
+  
+        // contoh menggunakna if
+
+        if(person.addres !== undefined && person.addres !== null)
+    {
+        country= person.addres.country;
+    }
+     document.writeln(`<p> ${country}</p>`);
+
+    // contoh Menggunakan Optional Chaining Operator
+
+    let country2 = person?.addres?.country;
+
+    document.writeln(`<p> ${country2}</p>`);
+
+    document.writeln(`<p> Sukses</p>`);
+
+    </script>
+</body>
+
+
+</html>

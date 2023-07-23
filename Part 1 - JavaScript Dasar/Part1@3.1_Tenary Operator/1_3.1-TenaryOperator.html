@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>Tenary Operator</title>
+
+</head>
+
+<body>
+    <script>
+        // contoh tenary operator
+        const examValue=75;
+
+        let ucapan;
+
+        document.writeln(`<p> Contoh If Tanpa Tenary Operator</p>`);
+        // using iff without tenary operator
+         if (examValue>=75)
+         {
+            ucapan="Selamat Anda Lulus";
+         }
+         else
+         {
+            ucapan="Silahkan Dicoba Lagi bosq";
+         }
+         document.writeln(`<p> ${ucapan}</p>`);
+
+         
+
+         document.writeln(`<p> Contoh If MENGGUNAKAN Tenary Operator</p>`);
+
+         const attitudeValue=75;
+
+         const ucapanAttitude= attitudeValue>=75 ? "Selamat Anda Bermoral" : "WADUH, Anda TIDAK BerMORAL";
+
+         document.writeln(`<p> ${ucapanAttitude}</p>`);
+
+
+
+    </script>
+</body>
+
+
+</html>

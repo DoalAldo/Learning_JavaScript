@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>In Operator</title>
+
+</head>
+
+<body>
+    <script>
+        // in operator tujuan nya melakukan pengecekan properties ADA atau TIDAK ADA di dalam object
+        // value yang akan di keluarkan adalah true or false
+        const person ={
+            firstName:"Aldo",
+            lastName:"Gunawan",
+            fullName: undefined
+        };
+
+        if("firstName" in person)
+        {
+            console.info(`Hello ${person.firstName}`);
+        }
+       
+        else
+        {
+            console.info("Hello you");
+        }
+
+        if("fullName" in person)
+        {
+            console.info(`Hello ${person.fullName}`);
+        }
+       
+        else
+        {
+            console.info("Hello you");
+        }
+
+
+
+    </script>
+</body>
+
+
+</html>

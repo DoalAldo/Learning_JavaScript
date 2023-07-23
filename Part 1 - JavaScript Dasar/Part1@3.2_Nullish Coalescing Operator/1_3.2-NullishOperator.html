@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>Nullish Coalescing Operator</title>
+
+</head>
+
+<body>
+    <script>
+       
+         let parameter;
+         let dataFunction = parameter;
+
+         document.writeln(`<p> Contoh If TANPA MENGGUNAKAN Nullish Coalescing Operator</p>`);
+
+         if (dataFunction===null || dataFunction===undefined)
+         {
+            dataFunction="Default Value";
+         }
+         document.writeln(`<p> ${dataFunction}</p>`);
+
+   
+         document.writeln(`<p> Contoh If MENGGUNAKAN Nullish Coalescing Operator</p>`);
+
+        const dataFunctionParam= parameter ?? "Nilai Default";
+
+        document.writeln(`<p> ${dataFunctionParam}</p>`);
+
+    </script>
+</body>
+
+
+</html>
