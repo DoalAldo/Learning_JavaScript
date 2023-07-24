@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>For OF </title>
+
+</head>
+
+<body>
+    <script>
+        // contoh For OF
+
+        const names =["Darmatius","Aldo","Gunawan"];
+
+        for(const name of names)
+        {
+            document.writeln(`<p> ${name}</p>`);
+        }
+
+
+        const fullNames ="Darmatius Aldo Gunawan";
+        for(const char of fullNames)
+        {
+            document.writeln(`<p> ${char}</p>`);
+        }
+        
+    
+        // akan error karena object tidak bisa di iterable
+        // const person={
+        //     firstName:"Darmatius",
+        //     middleName:"Aldo",
+        //     lastName:"Gunawan",
+        //     fullName:"Darmatius Aldo Gunawan"
+        // }
+
+        // for(const namePerson of person)
+        // {
+        //     document.writeln(`<p> ${namePerson}</p>`);
+        // }
+        
+
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>For In </title>
+
+</head>
+
+<body>
+    <script>
+        // contoh For In
+        const person={
+            firstName:"Darmatius",
+            middleName:"Aldo",
+            lastName:"Gunawan",
+            fullName:"Darmatius Aldo Gunawan"
+        }
+
+        for (const property in person)
+        {
+            document.writeln(`<p> Properti Name is :  ${property}, With Property Value is : ${person[property]}</p>`);
+        }
+        
+        const name =["Darmatius","Aldo","Gunawan"];
+
+        for (const index in name)
+        {
+            document.writeln(`<p> ${index}, With Value : ${index[name]}</p>`);
+        }
+
+    </script>
+</body>
+
+
+</html>

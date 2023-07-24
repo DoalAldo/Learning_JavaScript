@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>Label </title>
+
+</head>
+
+<body>
+    <script>
+        // contoh Label
+
+        console.info(`CONTOH LABEL BIASA`);
+        loopi:
+        for (let i = 0 ;i<100;i++)
+        {
+            loopj:
+            for(let j=0;j<10;j++)
+            {
+                console.info(`${i} - ${j}`);
+            }
+        }
+
+       
+        // contoh label menggunakan continue
+        console.info(`CONTOH LABEL MENEGUNKAN CONTINUE`);
+        loopi:
+        for (let i = 0 ;i<10;i++)
+        {
+            loopj:
+            for(let j=0;j<100;j++)
+            {
+                if(j>10)
+                {
+                    continue loopi;
+                }
+                console.info(`${i} - ${j}`);
+            }
+        }
+
+        
+
+    </script>
+</body>
+
+
+</html>
