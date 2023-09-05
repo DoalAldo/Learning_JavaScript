@@ -8,6 +8,8 @@
 
 <body>
     <script>
+
+
     // contoh tanpa menggunakan with statement
 
     const person={
@@ -17,7 +19,7 @@
             fullName:"Darmatius Aldo Gunawan"
         }
 
-        console.info("===========TANPA WITH STATEMENT===========")
+        console.info("===========TANPA WITH STATEMENT===========");
         // for(const personName in person)
         // {
         //     console.info(person[personName]);
@@ -28,7 +30,7 @@
         console.info(person.lastName);
         console.info(person.fullName);
 
-        console.info("===========Menggunakan WITH STATEMENT===========")
+        console.info("===========Menggunakan WITH STATEMENT===========");
         
         with(person)
         {
@@ -37,7 +39,7 @@
             console.info(lastName);
             console.info(fullName);
         }
-
+        console.log("test this is sample logging");
     </script>
 </body>
 

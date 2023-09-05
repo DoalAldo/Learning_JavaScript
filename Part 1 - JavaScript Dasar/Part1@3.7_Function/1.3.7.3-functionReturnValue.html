@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>With Statement </title>
+
+</head>
+
+<body>
+    <script>
+        // contoh function dengan parameter that return a value
+        function greetingPeople(firstName,middleName,lastName)
+        {
+           const greet = `Hello you ${firstName} ${middleName} ${lastName}`;
+           return greet;
+        }
+        
+        //function that return multiple value that changes
+        function getFinalScore(score){
+            if(score >90){
+                return "A";
+            }else if (score>80){
+                return "B";
+            }
+            else if (score>70){
+                return "C";
+            }
+            else if (score>60) {
+                return "D";
+            }else {
+                return "E";
+            }
+            
+        }
+
+        //function that breaking execution
+        function isContains(arrayInput,needSearchValue) {
+            for(const arrayElement of arrayInput){
+                console.info(arrayElement);
+                if(arrayElement===needSearchValue){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+        // contoh memanggil function() dengan parameter that return a value
+        const resultGreetingPeople = greetingPeople("Darmatius","Aldo","Gunawan");
+        document.writeln(`<p> ${resultGreetingPeople}<p>`);
+
+        const finalScore = getFinalScore(85);
+        // calling function that return multiple value that changes
+        document.writeln(`<p> the final score is ${finalScore}</p>`);
+        
+        const array =[1,2,3,4,5,6,7,8,9,0,10];
+        const searchValue =6;
+        const isFound = isContains(array,searchValue);
+
+        console.info(isFound);
+
+        if(isFound===true){
+            document.writeln(`<p>the search value is found</p>`);
+        }else{
+            document.writeln(`<p>the search value is <b>NOT found</b></p>`);
+        }
+        
+
+    </script>
+</body>
+
+
+</html>
