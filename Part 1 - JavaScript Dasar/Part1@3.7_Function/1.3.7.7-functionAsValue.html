@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>With Statement </title>
+
+</head>
+
+<body>
+    <script>
+    // contoh function as VALUE
+    function sayHello(name){
+        console.info(`Hello You ${name}`);
+    }
+
+    let say=sayHello;
+
+    //contoh memanggin function biasa
+    sayHello("Aldo");
+
+    //contoh memanggil function as value
+    say("AlDOO");
+
+    function giveMeName(callback){
+        callback("Aldiiii");
+    }
+    giveMeName(sayHello);// function say hello yang di kirimkan ke dalam giveMeName 
+    giveMeName(say);
+    </script>
+</body>
+
+
+</html>

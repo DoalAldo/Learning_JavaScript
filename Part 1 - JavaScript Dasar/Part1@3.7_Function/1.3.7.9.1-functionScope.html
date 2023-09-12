@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>With Statement </title>                                      
+
+</head>
+
+<body>
+    <script>
+
+    // contoh global scope
+    let counter=0;
+        function counterPlus(){
+            counter++;
+        }
+
+        counterPlus();
+        console.log(counter);
+        counterPlus();
+        console.log(counter);
+        // sampai di sini contoh global scope
+
+    // contoh local scope within (scope/variable inside function)
+    function first(){
+        // local scope first
+        let firstVariable="First";
+    }
+
+    function second(){
+        // local scope second
+        let secondVariable="Second";
+    }
+
+    console.log(first());
+    console.log(second());
+
+
+    // contoh memanggil local scope yang akan seharus nya menghasilkan error 
+    // dikarenakan variable nya tidak bisa di panggil di luar dari tag function yang berlaku
+
+    // console.log(firstVariable);
+    // console.log(secondVariable);
+    // akan kena error yang di bawah
+    // Uncaught ReferenceError ReferenceError: firstVariable is not defined
+    //at <anonymous> (d:\Learning\Learning JavaScript 2023 ALDO\Part 1 - JavaScript Dasar\Part1@3.7_Function\1.3.7.9.1-functionScope.html:40:17)
+    
+
+    // contoh Scope Dari nested Fnction
+    function pertama(){
+        // local scope pertama
+        let variablePertama="Var Pertama";
+
+        function kedua(){
+            // memanggil local scope pertama 
+            // kenpa bisa karena function ke 2 merupakan nested function di dalam function pertama
+            // jadi function kedua bisa mengakses semua variable / scope dari function pertama
+            console.info(variablePertama);
+        }
+
+        kedua();
+    }
+    pertama();
+    
+    </script>
+</body>
+
+
+</html>

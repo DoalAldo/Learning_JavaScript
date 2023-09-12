@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+    <title>With Statement </title>
+
+</head>
+
+<body>
+    <script>
+    // contoh function dengan rest parameter
+
+        function dataSum(name, ...dataSum){
+            let totalData = 0;
+            for (const item of dataSum)
+            {
+                totalData = totalData + item;
+            }
+            document.writeln(`<p> ${name}, the value of total tempt is ${totalData}</p>`);    
+        }
+
+        dataSum("aldo",1,2,3,4,5,6,7,8,9,10);
+        
+        dataSum("aldo",1231,123,123456,345,5678,89);
+        
+        dataSum("aldo",56,234,6798,234,98324,5234,5675);
+
+
+        document.writeln(`<p> <b> Contoh function with rest parameter using Spread Syntax </b> </p>`); 
+
+        // contoh function dengan rest parameter dengan menggunakan spread syntax (inputan rest param nya lsng array)
+        function exponentRoot(name,exponent, ... rootNumber)
+        {
+            let result = 0;
+            for(const item of rootNumber){
+                result=Math.pow(item,exponent);
+                document.writeln(`<p> ${name}, the value of ${item} exponent by ${exponent} is : ${result} </p>`); 
+            }
+        }   
+        const exponentItem =[2,3,4,5,6,7,8,9,10];
+        exponentRoot("aldo",2,...exponentItem);
+
+        document.writeln(``); 
+        document.writeln(`<p> <b> Contoh function with old fashion way just like rest param, is using Arguments Object </b> </p>`); 
+
+        function oldMultiply(){
+            let totalValue =1;
+            for(const item of arguments){
+                totalValue = totalValue*item;
+                document.writeln(`<p> the total value of ${item}  is : ${totalValue} </p>`); 
+            }
+        }
+
+        oldMultiply(1,2,3,4,5,6,7,8,9,10);
+
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>With Statement </title>                                      
+
+</head>
+
+<body>
+    <script>
+       function volume (panjang,lebar,tinggi){
+
+        let totalVolume=0;
+
+        function luasAlas(panjang,lebar){
+            return panjang*lebar;
+        }
+
+        totalVolume=luasAlas(panjang,lebar)*tinggi
+
+        return totalVolume;
+
+       }
+
+       console.log(volume(3,4,5));
+      // console.log(luasAlas(3,4));
+// sebuah inner function si function luas alas tidak mungkin di panggil di luar function outer nya kalau di panggil akan kena error
+
+    </script>
+</body>
+
+
+</html>
