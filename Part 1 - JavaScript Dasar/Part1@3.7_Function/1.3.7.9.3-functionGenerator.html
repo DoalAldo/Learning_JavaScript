@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Function Generator</title>                                      
+
+</head>
+
+<body>
+    <script>
+        // contoh Function generator simple
+        function *createNames(){
+            // contoh mau mereturn value harus pake yield
+            yield "Darmatius";
+            yield "Aldo";
+            yield "Gunawan";
+        }
+
+        console.info (createNames());
+
+        const names= createNames();
+
+        for(const name of names){
+            console.info(name);
+        }
+
+        // contoh function Genarator yang agak complex
+        // lazy
+        function* buatGanjil(value)
+        {
+            for(let i=1;i<= value;i++){
+                if(i%2===1){
+                    console.info(`Yield ${i}`);
+                    yield i;
+                    
+                }
+            }
+        }
+
+        const numberGanjil= buatGanjil(100);
+        for (const angkaGanjil of numberGanjil)
+        {
+            console.info(angkaGanjil);
+        }
+    </script>
+</body>
+
+
+</html>

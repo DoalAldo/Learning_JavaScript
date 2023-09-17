@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Arrow  Function</title>                                      
+
+</head>
+<h1> learning Arrow Function </h1>
+<h1> cek di console</h1>
+<body>
+    <script>
+  // contoh arrow function
+  const sayHello  = (name) => {
+        const say = `Hello ${name}`;
+        console.info(say);
+     }
+
+     sayHello("Aldo");
+
+
+     // contoh arrow funtion tanpa block
+      const greetingsPeople =(name) => console.info(`Hello You ${name}, Greetings from me`);
+
+      greetingsPeople("Andy Wijaya");
+
+      // contoh arrow function yang return a value
+        // berikut contoh arrow function tanpa block returning a value
+            const plus =(first,second) => first+second;
+            console.info(`the value of 5+7 is :${plus(5,7)}`);
+
+        // contoh arrow function with block returning a value
+            const luasAlas = (panjang,lebar) =>{
+                return panjang * lebar;
+            }
+            console.info(`the area value from 5*7 is ${luasAlas(5,7)}`);
+
+
+    // CONTOHJ arrow function tanpa kurung parameter
+     //hanya bisa di pakai kalau parameter nya hanya 1
+            // berikut contoh nya
+
+            const sayYouName = name => console.info(`Well Hello ${name}`);
+            sayYouName("Bambang");
+
+
+    // Contoh arrow Function as Parameter in another function
+     function giveMeName(callback){
+        callback("Aldo");
+     }
+        // contoh anonimous function
+        giveMeName(function(name){
+            console.info(`Hello ${name} from anonimous function`);
+        })
+
+        // contoh arrow function
+
+        giveMeName(name => console.info(`Hello From Arrow fucntion as param , ${name}`));
+
+       
+    </script>
+</body>
+
+
+</html>
