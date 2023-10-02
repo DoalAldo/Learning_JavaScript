@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Learning Using DEBUGGER in JS</title>                                      
+</head>
+<body>
+    <script>
+      {
+          function createFullName(firstName,middleName,lastName)
+          {
+            debugger;
+            const fullName=`${firstName} ${middleName} ${lastName}`;
+            return fullName;
+          }
+        
+          const name = createFullName("Darmatius","Aldo","Gunawan");
+          console.info(name);
+      }
+    </script>
+</body>
+
+
+</html>

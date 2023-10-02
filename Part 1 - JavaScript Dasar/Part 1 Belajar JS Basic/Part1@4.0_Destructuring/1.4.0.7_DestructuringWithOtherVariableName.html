@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Learning Destructuring With Other Variable Name</title>                                      
+</head>
+<body>
+    <script>
+      {
+        const namePerson1={
+          firstName1:"Darmatius",
+          middleName1:"Aldo",
+          lastName1:"Gunawan"
+        };
+        
+
+        const {firstName1:namaDepan
+          ,middleName1:namaTengah
+          ,lastName1:namaBelakang="Default lastName"}=namePerson1;
+      
+
+        console.info("Cetak Dengan namePerson1 With Other Variable Name ");
+        console.info(namaDepan);
+        console.info(namaTengah);
+        console.info(namaBelakang);
+
+       
+      }
+    </script>
+</body>
+
+
+</html>

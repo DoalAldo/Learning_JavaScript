@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Learning Setter</title>                                      
+</head>
+<body>
+    <script>
+        const person ={
+            firstName:"Default Nama Permata",
+            middlename:"Default Nama Tengah",
+            lastName:"Default Nama Terakhir",
+            //contoh manual 
+            //fullName:"Darmatius Aldo Gunawan"
+            // contoh menggunakan getter
+            get fullName(){
+                return `${this.firstName} ${this.middlename} ${this.lastName}`;
+            },
+
+            set fullName(fullNameString){
+                const fullNameSplitArray= fullNameString.split(" ");
+               for(nameElement of fullNameSplitArray)
+               {
+                console.info(nameElement);
+               }
+                this.firstName=fullNameSplitArray[0];
+                this.middlename=fullNameSplitArray[1];
+                this.lastName=fullNameSplitArray[2];
+            }
+        }
+
+    
+        //mengisi atribut di dalam object person manual
+        // person.firstName="Darmatius";
+        // person.middlename="Aldo";
+        // person.lastName="Gunawan";
+
+        // contoh menggunakan setter untuk mengisi atribut di dalam object person 
+        console.info("Mengisi menggunakan SETTER");
+        person.fullName="Darmatius Aldo Gunawan";
+
+        // contoh memanggil function getter
+        console.info("Memanggil Menggunakan GETTER");
+        console.table(person);
+
+
+    </script>
+</body>
+
+
+</html>

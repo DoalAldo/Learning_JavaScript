@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Destructuring On Function Paramter</title>                                      
+</head>
+<body>
+    <script>
+      {
+        
+        function displayPersonUsingDestructuringParam({firstName,middleName,lastName,address:{street,city,country},hobby,channel,...phoneNumber}){
+
+        console.info("Contoh Mengambil Data Untuk di dalam Param FUNCTIOn Dari Object Menggunakan Destructuring ")
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+        console.info(street);
+        console.info(city);
+        console.info(country);
+        console.info(hobby);
+        console.info(channel);
+        console.info(phoneNumber);
+
+        }
+
+      // creating an person Object
+      const person={
+          firstName:"Darmatius",
+          middleName:"Aldo",
+          lastName:"Gunawan",
+          address:{
+              street:"Jln. Toko Tiga Seberang No. 3",
+              city : "Jakarta",
+              country: "Indonesia"
+          },
+          hobby:"Swiming and GYM",
+          channel:"NoobMaster69",
+          phoneNumber:"081360809278",
+          otherPhoneNumber:"085819829497"
+
+      };
+
+      // Call out The Function that console a data from param that using destructuring for inputing inside param
+      displayPersonUsingDestructuringParam(person);
+      }
+     
+
+      // contoh lain destructuring for param function
+      function sum ([firstDigit,secondDigit]){
+        return firstDigit+secondDigit;
+      }
+
+      console.info(sum([10,10]));
+      console.info(sum([15,10]));
+      console.info(sum([10,45]));
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Explaining Problem with Var Variable html</title>                                      
+
+</head>
+
+<body>
+    <script>
+        /*
+            Kesimpulan
+            Kalau pakai variable Let di global
+            dan membuat variable let yang sama lagi di local scope
+            value dari varibale let di global tidak akan ke ubah / ke override/ ke timpa
+
+            sedankan kalau pakai variable var di global , lalu 
+            membuat varibale var yang sama lagi di local scope
+            MAKA value dari variable var di global value nya akan di timpa dengan last value dari varible yang ada di local scope
+        */
+
+
+        // contoh menggunakan Var
+        var i=20;// contoh var global scope
+        
+        // Testing Local Scope Within For
+        for(var i=0;i<10;i++){
+            console.log(`Testing Local Scope Inside For With Value Var i : ${i}`);
+        }
+
+        // Testing Global Scope
+        console.info(`The Global Value Var i : ${i}`);
+
+
+        // contoh menggunakan let
+
+        let x=20;
+        for(let x=0;x<10;x++){
+            console.log(`Local Scope ${x}`);
+        }
+
+        console.log(`Global Scope ${x}`);
+        
+    </script>
+</body>
+
+
+</html>

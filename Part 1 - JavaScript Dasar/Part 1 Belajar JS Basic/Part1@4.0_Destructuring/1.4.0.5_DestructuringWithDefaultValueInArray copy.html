@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Learning Destructuring With Default Value in Array</title>                                      
+</head>
+<body>
+    <script>
+      {
+        const namePerson1=["Darmatius","Aldo","Gunawan"];
+        const namePerson2=["Andy","Wijaya"];
+
+        const [firstName1,middleName1,lastName1="Default lastName"]=namePerson1;
+        const [firstName2,middleName2,lastName2="Default lastName"]=namePerson2;
+
+        console.info("Cetak Dengan namePerson1 without Default Value in last Name ");
+        console.info(firstName1);
+        console.info(middleName1);
+        console.info(lastName1);
+
+        console.info("Cetak Dengan namePerson2 with Default Value in last Name Because namePerson2 doesn't contain lastName");
+        console.info(firstName2);
+        console.info(middleName2);
+        console.info(lastName2);
+      }
+    </script>
+</body>
+
+
+</html>
