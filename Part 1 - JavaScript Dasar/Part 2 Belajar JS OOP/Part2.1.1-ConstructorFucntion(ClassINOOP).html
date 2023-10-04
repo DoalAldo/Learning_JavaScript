@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Learning JS OOP - Creating an Class (Constructor Function)
+  </title>                                      
+</head>
+<body>
+    <script>
+    /**
+     * ! Contoh Membuat Object  
+     */
+      const personEko={
+        firstName:"Eko",
+        lastName:"Khanedi"
+      }
+      const personAldo={
+        firstName:"Aldo",
+        lastName:"Gunawan",
+        fullName:"Aldo Gunawan"
+      }
+
+      /**
+     * ! Contoh Membuat Constructor Function  
+     */
+      function Person(){
+        // ini contoh constructor Function yang setara Class di OOP JS
+
+        // ini contoh deklarasi properti di dalam class di JS
+        this.firstName="";
+        this.lastName="";
+
+        // contoh deklarasi /membuat method/ function di dalam class/ constructor function di OOP JS
+        this.sayHello= function(name){
+          console.log(`Hello You ${name}, My Name is ${this.firstName} ${this.lastName}`);
+        }
+      }
+
+      // contoh membuat object eko dan aldo dari class person
+      const eko = new Person();
+      eko.firstName="eko";
+      eko.lastName="eko";
+      eko.sayHello("Aldo");
+
+      const aldo= new Person();
+      aldo.firstName="Aldo";
+      aldo.lastName="Gunawan";
+      aldo.sayHello("Eko");
+
+      console.log(eko);
+      console.log(aldo);
+
+    </script>
+</body>
+
+
+</html>
