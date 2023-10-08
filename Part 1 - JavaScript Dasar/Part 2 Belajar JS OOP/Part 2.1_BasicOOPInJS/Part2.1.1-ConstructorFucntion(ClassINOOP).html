@@ -27,8 +27,8 @@
         // ini contoh constructor Function yang setara Class di OOP JS
 
         // ini contoh deklarasi properti di dalam class di JS
-        this.firstName="";
-        this.lastName="";
+        this.firstName="defaultFirstName";
+        this.lastName="defaultLastName";
 
         // contoh deklarasi /membuat method/ function di dalam class/ constructor function di OOP JS
         this.sayHello= function(name){
@@ -46,6 +46,9 @@
       aldo.firstName="Aldo";
       aldo.lastName="Gunawan";
       aldo.sayHello("Eko");
+
+      const test= new Person();
+      test.sayHello("Bambang");
 
       console.log(eko);
       console.log(aldo);

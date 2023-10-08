@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Prototype in JS</title>                                      
+</head>
+<body>
+    <script>
+        /**
+     * ! Contoh Constructor Function Dengan Parameter
+     * * Berikut Clas / Constructor Function yang memerlukan Parameter
+     * * firstName dan lastName
+     */
+     function Person(firstName,lastName){
+        // ini contoh property di dalam constructor Class
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.sayHello=function(name){
+          console.info(`Hello you ${name}, My Name is ${this.firstName} ${this.lastName}`);
+        }
+      }
+
+      // contoh membuat object dengan menggunakan parameter
+      const eko =  new Person("Eko","Sutarjo");
+      // eko.sayBye=function(){
+      //   console.info("Good Bye")
+      // }
+      const budi = new Person("Budi","Bambang");
+
+      Person.prototype.sayBye=function(){
+        console.info("Good Bye");
+      }
+
+      Person.prototype.run=function(){
+        console.info(`${this.firstName}  RUN NOW !!!!!!!!`);
+      }
+      console.log(eko);
+      console.log(budi);
+      eko.sayBye();
+      eko.run();
+
+    </script>
+</body>
+
+
+</html>

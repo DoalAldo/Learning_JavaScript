@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Learning Constructor Inheritance</title>                                      
+</head>
+<body>
+    <script>
+    /**
+     * ! Contoh Constructor Function (CLASS EMPLOYEE)
+     */
+
+     function Employee(firstName){
+      this.firstName=firstName;
+      this.sayHello=function(name){
+        console.info(`Hello You ${name}, Greetings From Me ${firstName} as your Employee`);
+      }
+     }
+
+      /**
+     * ! Contoh Constructor Function Inheritance (Inheritance CLASS EMPLOYEE)
+     * * Berikut Class / Constructor Function yang di inheritance kan dari class employee
+     * ! Side note ketika Class yang akan di inheritkan ada parameter maka ketika memanggil harus di assign Parameter nya juga
+     * ! Contoh memanggil inherit class employee Seperti ini Employee.call(this,parameter dari class EMPLOYEE)
+     */
+
+     function Manager(firstName,lastName){
+      Employee.call(this,firstName);
+      this.lastName=lastName;
+     }
+
+
+     console.info(`This is From Object Leo`);
+     const leo= new Employee("Leonardo");
+     console.info(`print firstName From Object leo ${leo.firstName}`);
+     leo.sayHello("Aldo");
+     
+     console.info("+++++++++++++++++++++++++++++");
+
+     console.info(`This is From Object Aldo`);
+     const aldo= new Manager("Aldo","Gunawan");
+     console.info(`print firstName From Object Aldo ${aldo.firstName}`);
+     console.info(`print lastName From Object Aldo ${aldo.lastName}`);
+     aldo.sayHello("Joko");
+
+    </script>
+</body>
+
+
+</html>
