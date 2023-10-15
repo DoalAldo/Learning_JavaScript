@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Super Constructor</title>                                      
+</head>
+<body>
+    <script>
+  class Employee{
+      constructor(firstName){
+        this.firstName=firstName;
+      }
+        //method sayHello
+        sayHello(name){
+          console.info(`Hello ${name}, My Name is EMPLOYEE :${this.firstName}` );
+        }
+      }
+
+      // contoh inhertiance
+      class Manager extends Employee{
+        constructor(firstName,lastName){
+          // wajib memanggil constructor di class yang 1 dengan cara super(nama constructor 1)
+          super(firstName);
+          this.lastName=lastName
+        }
+        sayHello(name){
+          console.info(`Hello ${name}, My Name is MANAGER :${this.firstName} ${this.lastName}` );
+        }
+      }
+
+
+      const budi = new Employee("Budi");
+      budi.sayHello("Joko");
+
+      const aldo = new Manager("aldo","Gunawan");
+      aldo.sayHello("Joko");
+
+      console.info(budi);
+      console.info(aldo);
+    </script>
+</body>
+
+
+</html>

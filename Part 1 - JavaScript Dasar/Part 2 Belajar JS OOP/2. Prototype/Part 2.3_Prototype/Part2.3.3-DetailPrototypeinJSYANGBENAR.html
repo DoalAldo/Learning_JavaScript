@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Detail Inheritance Prototype yang BENARJS</title>                                      
+</head>
+<body>
+    <script>
+  /**
+     * ! Contoh Prototype inheritance yang BENAR!!!
+     */
+
+     function Emplopyee(name){
+      this.name=name;
+     }
+     
+
+     function Manager (name){
+      this.name=name;
+     }
+
+     // Contoh inheritance prototype salah
+
+     Manager.prototype=Object.create(Emplopyee.prototype); //> Di sini yang bikin MASALAH!!!!!!!!!!!
+
+     Manager.prototype.sayHello=function(name){
+      console.info(`Hello ${name}, my name is Manager ${this.name}`);
+     }
+
+     Emplopyee.prototype.sayHello=function(name){
+      console.info(`Hello ${name}, my name is Employee ${this.name}`);
+     }
+
+     const employee = new Emplopyee("Budi");
+     employee.sayHello("Joko"); // expected Result `Hello Joko my name is Employee Budi
+
+     const manager= new Manager("Eko");
+     manager.sayHello("Joko")// expected Result `Hello Joko my name is Manager Budi
+    </script>
+</body>
+
+
+</html>
