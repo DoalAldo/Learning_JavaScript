@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Super Method in JS </title>                                      
+</head>
+<body>
+    <script>
+      class Shape{
+        paint(){
+          console.info(`-LDO- Logging dari Method Paint di Class Shape`);
+          console.info(`Paint Shape Basic`);
+        }
+      }
+
+      class Circle extends Shape{
+        paint(){
+          console.info(`-LDO- Logging dari Method Paint di Class Cicle yang extends ke class shape`);
+          super.paint();
+          console.info(`Paint Shape CIRCLE`);
+        }
+      }
+
+      const bentuk = new Shape();
+      bentuk.paint();
+
+      const lingkaran = new Circle();
+      lingkaran.paint();
+    </script>
+</body>
+
+
+</html>

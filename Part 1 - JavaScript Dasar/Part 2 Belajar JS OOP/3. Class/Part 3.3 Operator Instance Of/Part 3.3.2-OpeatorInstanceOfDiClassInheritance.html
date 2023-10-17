@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Operator Instance Of in JS</title>                                      
+</head>
+<body>
+    <script>
+        class Employee{
+
+        }
+
+        class Manager extends Employee {
+
+        }
+
+        const leo = new Employee();
+        const aldo = new Manager();
+
+        console.info(leo instanceof Employee); // value nya akan TRUE
+        console.info(leo instanceof Manager); // value nya akan FALSE
+        console.info(aldo instanceof Employee); // value nya akan TRUE
+        console.info(aldo instanceof Manager); // value nya akan TRUE
+
+        console.info(Configuration().name);
+        console.info(Configuration().version);
+        console.info(Configuration().author);
+    </script>
+</body>
+
+
+</html>
