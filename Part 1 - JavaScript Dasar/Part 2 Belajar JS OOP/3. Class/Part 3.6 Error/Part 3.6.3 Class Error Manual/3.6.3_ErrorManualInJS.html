@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Custome Validation Error</title>                                      
+</head>
+<body>
+    <script>
+    class ValidationError extends Error{
+    constructor(message, field){
+      super(message);
+      this.field=field;
+    }
+  }
+
+class MathUtil{
+  static sum(...numbers){
+    if(numbers.length===0)
+    {
+      throw new ValidationError("Total Param Numbers Harus > dari 0","numbers");
+    }
+    let total =0;
+    for (const value of numbers){
+      total = total + value;
+    }
+    return total;
+  }
+}
+
+
+
+try{
+  const sum = MathUtil.sum(1,2,3,4,5,6,7,8,9,10);
+  console.info(MathUtil.sum()); // result akan mengthrow error custom
+  console.info(sum);
+}
+catch(error){
+  if(error instanceof ValidationError){
+    console.error(`Terjadi Error di Field ${error.field} dengan error Message is => ${error.message}`)
+  }
+  else{
+    console.error(`Terjadi Error dengan Message : ${error.message}`);
+  }
+  
+}
+finally{
+  // ketika ada Finally berarti akan selalu di jalankan setelah try selesai dijalankan
+  console.info(`Code Sudah STOP`);
+}
+
+
+    </script>
+</body>
+
+
+</html>
