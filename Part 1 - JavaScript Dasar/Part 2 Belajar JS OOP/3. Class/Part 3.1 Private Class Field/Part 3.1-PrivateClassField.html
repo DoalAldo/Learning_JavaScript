@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Private Class Field In JS </title>                                      
+</head>
+<body>
+    <script>
+      class Counter{
+        // contoh private Field yang hanya bisa di akses di class counter
+        #counter=0;
+        increment(){
+            this.#counter++;
+        }
+
+        decrement(){
+            this.#counter--;
+        }
+
+        get(){
+            return this.#counter;
+        }
+      }
+
+      const counter= new Counter();
+      counter.increment();
+      counter.increment();
+      counter.increment();
+      counter.increment();
+      counter.increment();
+      
+      console.log(counter.get());
+      counter.decrement();
+      counter.decrement();
+      counter.decrement();
+      console.log(counter.get());
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF8">
+<title>Private Method In JS </title>                                      
+</head>
+<body>
+    <script>
+        class Person{
+            // contoh method yang tidak private
+            sayName(name){
+                if(name){
+                   this. #sayWithName(name);
+                }
+                else {
+                    this.#sayWithoutName();
+                }
+            }
+
+            #sayWithoutName(){
+                console.info(`Well Hello You.`);
+            }
+            #sayWithName(name){
+                console.info(`Hello You ${name}!!!`);
+            }
+        }
+        const aldo= new Person();
+        aldo.sayName("Andy");
+
+        const andy= new Person();
+        andy.sayName();
+    </script>
+</body>
+
+
+</html>
