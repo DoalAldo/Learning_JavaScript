@@ -1,0 +1,15 @@
+// Contoh 1
+{"level":"info","message":"An Info Logging"}
+{"level":"error","message":"An error Logging"}
+// Contoh 2
+{"level":"info","message":"An Info Logging"}
+{"level":"error","message":"An error Logging"}
+// Contoh 3 Ketika Level Logger Winston nya di set di Warn
+{"level":"error","message":"An error Logging"}
+// Contoh 4 Dibalikin lagi
+{"level":"info","message":"An Info Logging"}
+{"level":"error","message":"An error Logging"}
+// Contoh 5
+//! Ketika Format Winston nya berbentuk CLI dan transports nya di masukin hasil logging nya ke file .
+[32minfo[39m:    An Info Logging
+[31merror[39m:   An error Logging
