@@ -1,0 +1,133 @@
+{"level":"info","message":"An Info Logging => akan masuk ke file application.log","timestamp":"2024-01-28 00:20:10:2010"}
+{"level":"error","message":"An error Logging => akan masuk ke file application_error.log","timestamp":"2024-01-28 00:20:10:2010"}
+
+{"URL":"youtube.com","isAuthenticated":false,"level":"info","message":"An Info Logging => akan masuk ke file application.log","method":"GET","timestamp":"2024-01-28 00:24:30:2430"}
+{"URL":"youtube.com","isAuthenticated":false,"level":"error","message":"An error Logging => akan masuk ke file application_error.log","method":"GET","timestamp":"2024-01-28 00:24:30:2430"}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'info',
+  message: 'An Info Logging => akan masuk ke file application.log',
+  timestamp: '2024-01-28 00:27:39:2739'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'error',
+  message: 'An error Logging => akan masuk ke file application_error.log',
+  timestamp: '2024-01-28 00:27:39:2739'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'info',
+  message: 'An Info Logging => akan masuk ke file application.log',
+  timestamp: '2024-03-03 13:58:57:5857'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'error',
+  message: 'An error Logging => akan masuk ke file application_error.log',
+  timestamp: '2024-03-03 13:58:57:5857'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'info',
+  message: 'An Info Logging => akan masuk ke file application.log',
+  timestamp: '2024-03-03 14:03:09:39'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'error',
+  message: 'An error Logging => akan masuk ke file application_error.log',
+  timestamp: '2024-03-03 14:03:09:39'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'info',
+  message: 'An Info Logging => akan masuk ke file application.log',
+  timestamp: '2024-03-03 14:03:12:312'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'error',
+  message: 'An error Logging => akan masuk ke file application_error.log',
+  timestamp: '2024-03-03 14:03:12:312'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'info',
+  message: 'An Info Logging => akan masuk ke file application.log',
+  timestamp: '2024-03-03 14:03:13:313'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'error',
+  message: 'An error Logging => akan masuk ke file application_error.log',
+  timestamp: '2024-03-03 14:03:13:313'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'info',
+  message: 'An Info Logging => akan masuk ke file application.log',
+  timestamp: '2024-03-03 14:03:15:315'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'error',
+  message: 'An error Logging => akan masuk ke file application_error.log',
+  timestamp: '2024-03-03 14:03:15:315'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'info',
+  message: 'An Info Logging => akan masuk ke file application.log',
+  timestamp: '2024-03-25 21:47:13:4713'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'error',
+  message: 'An error Logging => akan masuk ke file application_error.log',
+  timestamp: '2024-03-25 21:47:13:4713'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'info',
+  message: 'An Info Logging => akan masuk ke file application.log',
+  timestamp: '2024-03-25 21:50:10:5010'
+}
+{
+  method: 'GET',
+  isAuthenticated: false,
+  URL: 'youtube.com',
+  level: 'error',
+  message: 'An error Logging => akan masuk ke file application_error.log',
+  timestamp: '2024-03-25 21:50:10:5010'
+}

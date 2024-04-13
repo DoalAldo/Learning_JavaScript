@@ -1,0 +1,8 @@
+const person2={
+  firstName : "Darmatius",
+  middleName:"Aldo",
+  lastName : "Gunawan"
+};
+
+console.info(Object.values(person2));
+console.info(Object.getOwnPropertyNames(person2));

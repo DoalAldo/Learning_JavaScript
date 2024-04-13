@@ -16,7 +16,7 @@ queue.forEach(
 );
 
 console.info ("========================================================");
-//! SHIFT tujuan nya untuk mengeluarkan value array dari paling depan array (index ke 0)
+//! SHIFT tujuan nya untuk mengeluarkan value array dari paling DEPAN array (index ke 0)
 //! SHIFT using Method of (FIFO - First In First Out)
 console.info(` Using Shift - 1 with value ${queue.shift()}`);
 queue.forEach(

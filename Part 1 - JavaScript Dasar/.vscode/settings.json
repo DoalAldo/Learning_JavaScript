@@ -1,8 +1,8 @@
 {
-  "workbench.colorTheme": "Noctis Sereno",
+  "workbench.colorTheme": "Lapis Aquamarine (stealth version)",
   "workbench.preferredDarkColorTheme": "Noctis",
   "workbench.preferredHighContrastColorTheme": "Default High Contrast",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.tips.enabled": true,
   "window.autoDetectColorScheme": false,
   "a-file-icon-vscode.arrowTheme": "plusMinus"
