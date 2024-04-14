@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Alias Saat Mau Mengimport</title>
+</head>
+<body>
+<H1> Testing Alias Saat Mau Mengimport</H1>
+<script type="module">
+    import {company as perusahaan,multiply as resultMultiply,Company as Perusahaan} from "./4.1_scripts/F_company_alias.js";
+    const perusahaan1= new Perusahaan("BCA","Menara BCA lt. 33");
+    perusahaan1.greetings("Aldo", "Universitas Bunda Mulia");
+
+    console.log(`WELCOME TO this COMPANY ${perusahaan} \n`);
+
+    const firstNum = 5;
+    const lastNum = 10;
+    console.log(`The Result of ${firstNum} multiply by ${lastNum} is : ${resultMultiply(firstNum,lastNum)}`);
+
+
+</script>
+</body>
+</html>
