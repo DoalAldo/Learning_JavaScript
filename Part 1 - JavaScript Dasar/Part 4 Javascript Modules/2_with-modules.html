@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>With - Mondules</title>
+    <script type="module" src ="4.1_scripts/B_say.js"></script>
+    <script type="module" src ="4.1_scripts/C_variable.js"></script>
+</head>
+<body>
+<H1> Belajar Javascript modues </H1>  <br>
+<H1> testing manggil function di dalam script say menggunakan modules</H1><br>
+
+<script type="module">
+
+    /*
+    ! Perlu di ubah di tag script, type nya menjadi MODULE krn secara default type script akan javascript
+    ! lalu perlu di import function yang mau di pakai di dalam script ini
+     */
+
+    import {sayHello,sayGoodBye,name} from "./4.1_scripts/B_say.js";
+
+    sayHello("Darmatius Aldo Gunawan");
+    sayGoodBye("Darmatius Aldo Gunawan");
+
+    console.info(name);
+
+    console.log(`Testing Importing Variable using MODULES \n`);
+    import {firstName,middleName,lastName,age} from "./4.1_scripts/C_variable.js";
+
+    console.log(`Hello My name is  ${firstName} ${middleName} ${lastName} ,and my Age is  ${age} \n`);
+</script>
+
+
+</body>
+</html>

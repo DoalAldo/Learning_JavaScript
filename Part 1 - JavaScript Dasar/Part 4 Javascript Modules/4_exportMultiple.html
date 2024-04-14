@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Exporting Multiple type at once</title>
+</head>
+<body>
+    <H1> Testing Multiple Exporting Type at once</H1>
+    <script type="module">
+        import {company,multiply,Company} from "./4.1_scripts/E_company.js";
+        const company1= new Company("BCA","Menara BCA lt. 33");
+        company1.greetings("Aldo", "Universitas Bunda Mulia");
+
+        console.log(`WELCOME TO this COMPANY ${company} \n`);
+
+        const firstNum = 5;
+        const lastNum = 10;
+        console.log(`The Result of ${firstNum} multiply by ${lastNum} is : ${multiply(firstNum,lastNum)}`);
+
+
+    </script>
+</body>
+</html>
