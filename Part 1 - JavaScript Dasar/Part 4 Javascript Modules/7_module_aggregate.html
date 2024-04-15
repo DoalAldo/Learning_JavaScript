@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Aggregate Module</title>
+</head>
+<body>
+<H1> Testing Modules Aggregate </H1>
+<script type="module">
+    import {Person,sayHello,sayGoodBye,multiply} from "./4.1_scripts/H_aggregate_module.js";
+
+    const person= new Person("Aldo");
+    person.sayHello("BAMBANG 1");
+
+    sayHello("BAMBANG 2");
+    sayGoodBye("BAMBANG 2");
+
+    console.log(`Return value of 5*5 is : ${multiply(5,5)}`);
+</script>
+</body>
+</html>

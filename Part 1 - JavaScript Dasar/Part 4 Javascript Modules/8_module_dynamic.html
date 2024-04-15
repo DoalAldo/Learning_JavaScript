@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Dynamic Module Loading</title>
+</head>
+<body>
+<H1> Testing Dynamic Module Loading </H1> <br>
+    <label for="name">INPUT name please : </label>
+    <input type="text" id="name">
+
+    <input type="button" value="Say"  id="sayBtn">
+    <script type="module">
+
+        //! disini import nya ketika di dalam button sayBtn dan ketika di klik baru di import module nya
+        document.getElementById("sayBtn").onclick=function(){
+            import("./4.1_scripts/I_dynamic_module_loading.js").then(module=>{
+                const name = document.getElementById("name").value;
+                module.alertingHello(name);
+            })
+        }
+    </script>
+
+
+</body>
+</html>

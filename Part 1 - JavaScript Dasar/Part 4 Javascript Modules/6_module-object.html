@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Modules Object Importing </title>
+</head>
+<body>
+
+<H1> Testing Modules Object Importing </H1>
+    <script type="module">
+        import * as Aldo from "./4.1_scripts/G_module_object.js";
+        console.log(`Using Module Object To Getting the Value of  firstName : ${Aldo.firstName} \n`);
+        console.log(`Using Module Object To Getting the Value of  middleName : ${Aldo.middleName} \n`);
+        console.log(`Using Module Object To Getting the Value of  lastName : ${Aldo.lastName} \n`);
+
+        Aldo.Hello("Bambang");
+
+        const person = new Aldo.Person("ALDO");
+
+        person.sayHello("BAMBANG");
+
+    </script>
+
+</body>
+</html>
